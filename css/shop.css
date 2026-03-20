@@ -1,0 +1,93 @@
+/* Shop Page Specific Styles */
+.shop-header {
+    text-align: center;
+    padding: 60px 0 30px;
+    background-color: #fff;
+}
+
+.shop-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 25px;
+    border: 1px solid #000;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Grid Layout */
+.product-container {
+    padding: 40px 5% 100px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.p-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.p-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.p-details h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #b58d67;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #b58d67;
+}
