@@ -360,3 +360,9 @@ footer {
     border-top: 1px solid #333;
     padding-top: 20px;
 }
+
+.nav-links a.active {
+    color: #b58d67; /* Gold/Bronze color */
+    border-bottom: 2px solid #b58d67;
+    padding-bottom: 5px;
+}
