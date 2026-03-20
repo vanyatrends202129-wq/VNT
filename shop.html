@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | Vanya Trends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer">
+                <span class="logo-v">V</span><span class="logo-t">T</span>
+                <span class="logo-vanya">VANYA</span><span class="logo-trends">TRENDS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop All</a></li>
+                <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop-header">
+        <h1>Our Collection</h1>
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterCategory('all')">All Trends</button>
+            <button class="tab-btn" onclick="filterCategory('ethnic')">Ethnic Wear</button>
+            <button class="tab-btn" onclick="filterCategory('western')">Western Chic</button>
+            <button class="tab-btn" onclick="filterCategory('coords')">Co-ords</button>
+        </div>
+    </section>
+
+    <div class="product-container">
+        <div class="product-grid" id="mainGrid">
+            <div class="product-card ethnic">
+                <div class="p-img">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=500" alt="Suit">
+                </div>
+                <div class="p-details">
+                    <h3>Silk Anarkali Set</h3>
+                    <p class="price">₹2,999</p>
+                    <button class="buy-btn" onclick="checkLogin()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card western">
+                <div class="p-img">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500" alt="Dress">
+                </div>
+                <div class="p-details">
+                    <h3>Summer Midi Dress</h3>
+                    <p class="price">₹1,599</p>
+                    <button class="buy-btn" onclick="checkLogin()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
